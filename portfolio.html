@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио проектов разработки мобильных и веб-приложений. Примеры работ и кейсы.">
+  <meta name="keywords" content="dart, flutter, web-development, С++, python, разработка, мобильные приложения, веб-разработка, iOS, Android, кроссплатформенные приложения, UI/UX дизайн">
+  <meta name="author" content="sadreev_dev">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Портфолио проектов - Все работы">
+  <meta property="og:description" content="Полное портфолио проектов мобильной и веб-разработки. Кейсы и примеры работ на Flutter, Arduino и других технологиях.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:url" content="https://sadreev_dev.ru/portfolio.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Портфолио - Мои проекты</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="https://i.ibb.co/fdFFF7Z/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="js/page-transitions.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+  <script src="js/preloader.js" defer></script>
+  <script src="js/modals.js" defer></script>
+</head>
+
+<body>
+  <!-- Прелоадер -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <img src="https://i.ibb.co/9HgggjBD/Logo.png" alt="Логотип" class="preloader-logo">
+      <div class="preloader-spinner"></div>
+      <div class="preloader-progress">
+        <div id="progressBar" class="preloader-progress-bar"></div>
+      </div>
+      <div class="preloader-text">Загрузка...</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="container">
+    <h1 class="hidden">web-development 2025</h1>
+    <div class="header-container">
+      <div class="header-logo">
+        <a class="header-logo-pic" href="index.html">
+          <img class="path" src="https://i.ibb.co/9HgggjBD/Logo.png" alt="sadreev_dev">
+        </a>
+      </div>
+      <div class="header-contacts">
+        <a class="header-tg" href="https://t.me/sadreev_j" target="_blank">
+          <i class="fab fa-telegram"></i> @sadreev_j
+        </a>
+      </div>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#services">Услуги</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#portfolio">Портфолио</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#testimonials">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PORTFOLIO PAGE -->
+  <section class="portfolio-header">
+    <div class="container">
+      <h2 class="section-header">ПОРТФОЛИО ПРОЕКТОВ</h2>
+    </div>
+  </section>
+
+  <section class="portfolio-section container" id="portfolio">
+    <div class="portfolio-filter">
+      <button class="filter-btn active" data-filter="all">Все проекты</button>
+      <button class="filter-btn" data-filter="mobile">Мобильные</button>
+      <button class="filter-btn" data-filter="web">Веб</button>
+      <button class="filter-btn" data-filter="design">UI/UX</button>
+      <button class="filter-btn" data-filter="arduino">Arduino</button>
+      <button class="filter-btn" data-filter="bots">Telegram боты</button>
+    </div>
+
+    <div class="portfolio-items">
+      <!-- Первый проект -->
+      <div class="portfolio-item" data-category="mobile">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://as1.ftcdn.net/v2/jpg/04/10/25/42/1000_F_410254255_wihNr6RrJiPwGigOExqQZE4OFXWOVkWI.jpg" alt="Фитнес-приложение" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project1">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FitTrack Pro</h3>
+            <p class="project-description">Мобильное приложение для отслеживания тренировок и питания с персонализированными программами и аналитикой.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">iOS</span>
+              <span class="project-tag">Android</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>3 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span>15k строк кода</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Второй проект -->
+      <div class="portfolio-item" data-category="web">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/1587860/pub_636a9abf6b675a46db5118d1_636a9e91e48379241f796b15/scale_1200" alt="E-commerce приложение" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project2">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ShopEase</h3>
+            <p class="project-description">Платформа электронной коммерции с интуитивным интерфейсом и безопасными платежами.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Stripe</span>
+              <span class="project-tag">Web</span>
+              <span class="project-tag">Mobile</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>4 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span>20k строк кода</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Третий проект -->
+      <div class="portfolio-item" data-category="mobile">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://sapr.ru/archive/sg/2009/9/9/2b.jpg" alt="Менеджер задач" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project3">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TaskFlow</h3>
+            <p class="project-description">Приложение для управления проектами с возможностью совместной работы и уведомлениями.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Realtime DB</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>2 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span>12k строк кода</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Четвертый проект -->
+      <div class="portfolio-item" data-category="design">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdn.dribbble.com/users/215249/screenshots/17011574/media/e8fcbb245d6be8f98b43ee6e138ccab2.png" alt="UI/UX Дизайн" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project4">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">MindfulUI</h3>
+            <p class="project-description">UI/UX дизайн для приложения медитации с акцентом на доступность и удобство использования.</p>
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">UI/UX</span>
+              <span class="project-tag">Дизайн-система</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>1.5 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-layer-group"></i>
+                <span>45+ экранов</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пятый проект -->
+      <div class="portfolio-item" data-category="web">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-responsive-web-design-2_P1_900x420?$pjpeg$&jpegSize=200&wid=900" alt="Веб-сайт" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project5">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TravelWise</h3>
+            <p class="project-description">Адаптивный веб-сайт для туристической компании с системой бронирования и интерактивной картой.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>2.5 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span>18k строк кода</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шестой проект -->
+      <div class="portfolio-item" data-category="bots">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdn.codegym.cc/images/article/1c24e5c1-b12d-484e-98bb-86052d3c9a67/original.jpeg" alt="Telegram бот" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project6">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">DeliveryBot</h3>
+            <p class="project-description">Telegram бот для заказа еды из ресторанов с интеграцией с системой оплаты и отслеживанием доставки.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Telegram API</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>1 месяц разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span>5000+ пользователей</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Седьмой проект -->
+      <div class="portfolio-item" data-category="arduino">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://static.tildacdn.com/tild6138-6539-4466-b363-643765353631/Arduino-UNO-ESP32-Wat.jpg" alt="Arduino проект" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project7">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">SmartGarden</h3>
+            <p class="project-description">Автоматизированная система полива и мониторинга растений на базе Arduino с мобильным приложением.</p>
+            <div class="project-tags">
+              <span class="project-tag">Arduino</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Flutter</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>2 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-microchip"></i>
+                <span>5 датчиков</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Восьмой проект -->
+      <div class="portfolio-item" data-category="mobile">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-3678114-3061622.png" alt="Мобильное приложение" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project8">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">LanguageBuddy</h3>
+            <p class="project-description">Приложение для изучения иностранных языков с использованием искусственного интеллекта и адаптивного обучения.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>4 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-language"></i>
+                <span>10 языков</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Девятый проект -->
+      <div class="portfolio-item" data-category="design">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdn.dribbble.com/users/1615584/screenshots/17317494/media/f3bef4f3315c4483432e2cb09c126559.jpg" alt="UI/UX Дизайн" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project9">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FinTrack</h3>
+            <p class="project-description">Дизайн-система для финансового приложения с фокусом на доступность и понятность сложной информации.</p>
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Adobe XD</span>
+              <span class="project-tag">Принципы UX</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>2 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-layer-group"></i>
+                <span>35+ экранов</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Десятый проект -->
+      <div class="portfolio-item" data-category="bots">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*tRReAtT_HJm4ok60MqQCbA.jpeg" alt="Telegram бот" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project10">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">EventPlanner</h3>
+            <p class="project-description">Бот для организации мероприятий в Telegram с возможностью создания опросов и автоматическими напоминаниями.</p>
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Telegram API</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>1.5 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span>3000+ пользователей</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Одиннадцатый проект -->
+      <div class="portfolio-item" data-category="arduino">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdn.instructables.com/F86/P9XK/JSWYTTIW/F86P9XKJSWYTTIW.jpg?auto=webp" alt="Arduino проект" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project11">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">HomeAutomation</h3>
+            <p class="project-description">Система умного дома на базе Arduino и ESP32 с голосовым управлением и интеграцией с Google Assistant.</p>
+            <div class="project-tags">
+              <span class="project-tag">Arduino</span>
+              <span class="project-tag">ESP32</span>
+              <span class="project-tag">IoT</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>3 месяца разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-home"></i>
+                <span>10+ устройств</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Двенадцатый проект -->
+      <div class="portfolio-item" data-category="web">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="https://cdn.dribbble.com/users/1615584/screenshots/16572503/media/b5a8eb86eb5a7059642142ef0e9c0dee.jpg" alt="CRM система" class="project-image">
+            <div class="project-overlay">
+              <button class="view-project-btn" data-project="project12">Детали проекта</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BusinessCRM</h3>
+            <p class="project-description">Веб-система управления взаимоотношениями с клиентами с аналитикой, автоматизацией рабочих процессов и интеграцией с мессенджерами.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">SQL</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>5 месяцев разработки</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span>25k строк кода</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-btn-container">
+      <a href="index.html" class="back-to-home">
+        НАЗАД
+      </a>
+    </div>
+  </section>
+
+  <!-- Модальные окна для проектов -->
+  <div class="project-modal-container" id="projectModalContainer">
+    <!-- Здесь будут модальные окна проектов, аналогичные тем, что на главной странице -->
+    <div class="project-modal" id="project1">
+      <div class="modal-header">
+        <h3>FitTrack Pro - Приложение для фитнеса</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/Zxe8BfY.jpg" alt="FitTrack Screenshot 1">
+          <img src="https://i.imgur.com/w9YeCYQ.jpg" alt="FitTrack Screenshot 2">
+          <img src="https://i.imgur.com/V3PzVHC.jpg" alt="FitTrack Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>FitTrack Pro - это комплексное решение для фитнеса и контроля питания. Приложение разработано с использованием Flutter и Firebase, что обеспечивает высокую производительность и синхронизацию данных в режиме реального времени.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Персонализированные планы тренировок и питания</li>
+            <li>Трекинг активности с интеграцией датчиков устройства</li>
+            <li>Аналитика прогресса и достижений</li>
+            <li>Интерактивные видео-тренировки</li>
+            <li>Социальные функции для поддержки мотивации</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Flutter, Dart, Firebase, REST API, Provider, BLoC, Custom Animations</p>
+
+          <h4>Результат</h4>
+          <p>Приложение получило высокую оценку пользователей (4.8/5.0) и было загружено более 50,000 раз. Клиент отметил 30% увеличение вовлеченности пользователей после релиза.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Посетить сайт</a>
+        <a href="#contact" class="btn modal-btn">Заказать похожее</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project2">
+      <div class="modal-header">
+        <h3>ShopEase - E-commerce платформа</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/Xrpo1tU.jpg" alt="ShopEase Screenshot 1">
+          <img src="https://i.imgur.com/hg9tjCh.jpg" alt="ShopEase Screenshot 2">
+          <img src="https://i.imgur.com/xCH9fkR.jpg" alt="ShopEase Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>ShopEase - многофункциональная платформа электронной коммерции, разработанная для малого и среднего бизнеса. Проект включает в себя мобильное приложение для конечных пользователей и веб-панель администратора.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Каталог товаров с продвинутым поиском и фильтрацией</li>
+            <li>Безопасная система платежей с интеграцией Stripe</li>
+            <li>Управление корзиной и оформление заказов</li>
+            <li>Система отзывов и рейтингов</li>
+            <li>Панель администратора для управления товарами и заказами</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Flutter, Dart, Firebase, Stripe API, GetX, REST API, Cloud Functions</p>
+
+          <h4>Результат</h4>
+          <p>Внедрение платформы позволило клиенту увеличить онлайн-продажи на 45% и расширить клиентскую базу. Время обработки заказов сократилось на 60%.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Посетить сайт</a>
+        <a href="#contact" class="btn modal-btn">Заказать похожее</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project3">
+      <div class="modal-header">
+        <h3>TaskFlow - Менеджер задач</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/PMOgO0l.jpg" alt="TaskFlow Screenshot 1">
+          <img src="https://i.imgur.com/UOF8aZ0.jpg" alt="TaskFlow Screenshot 2">
+          <img src="https://i.imgur.com/3WPY3Em.jpg" alt="TaskFlow Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>TaskFlow - это интуитивный и мощный инструмент управления задачами для команд любого размера. Приложение разработано с фокусом на удобство использования и эффективность рабочих процессов.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Канбан-доски для визуализации рабочего процесса</li>
+            <li>Система уведомлений и напоминаний</li>
+            <li>Комментарии и вложения файлов</li>
+            <li>Интеграция с календарем и почтой</li>
+            <li>Аналитика производительности команды</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Flutter, Firebase, Realtime Database, Cloud Functions, Provider Pattern</p>
+
+          <h4>Результат</h4>
+          <p>Внедрение TaskFlow позволило команде клиента повысить продуктивность на 35% и сократить время на коммуникацию между участниками проекта.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Посетить сайт</a>
+        <a href="#contact" class="btn modal-btn">Заказать похожее</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project4">
+      <div class="modal-header">
+        <h3>MindfulUI - UI/UX Дизайн для приложения медитации</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/vT8L7GO.jpg" alt="MindfulUI Screenshot 1">
+          <img src="https://i.imgur.com/gXQHlUZ.jpg" alt="MindfulUI Screenshot 2">
+          <img src="https://i.imgur.com/KzE8MGt.jpg" alt="MindfulUI Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>MindfulUI - проект по созданию пользовательского интерфейса для приложения медитации и осознанности. Дизайн фокусируется на создании спокойного, интуитивно понятного опыта, способствующего расслаблению и концентрации.</p>
+
+          <h4>Ключевые аспекты</h4>
+          <ul>
+            <li>Нейтральная и спокойная цветовая гамма</li>
+            <li>Плавные анимации и переходы</li>
+            <li>Интуитивная навигация с минимальными усилиями</li>
+            <li>Адаптивный дизайн для различных устройств</li>
+            <li>Разработка дизайн-системы с более чем 100 компонентами</li>
+          </ul>
+
+          <h4>Инструменты</h4>
+          <p>Figma, Adobe XD, Principle для анимаций, Illustrator для иллюстраций</p>
+
+          <h4>Результат</h4>
+          <p>Дизайн получил награду за лучший UX в категории приложений для здоровья на конференции UXDesign 2023. Приложение демонстрирует высокий уровень вовлеченности пользователей с показателем удержания 65%.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Посмотреть прототип</a>
+        <a href="#contact" class="btn modal-btn">Заказать дизайн</a>
+      </div>
+    </div>
+
+    <!-- Дополнительные модальные окна для новых проектов -->
+    <div class="project-modal" id="project5">
+      <div class="modal-header">
+        <h3>TravelWise - Туристический сайт</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/KL2H9CJ.jpg" alt="TravelWise Screenshot 1">
+          <img src="https://i.imgur.com/cZR5twm.jpg" alt="TravelWise Screenshot 2">
+          <img src="https://i.imgur.com/e3l8ZdF.jpg" alt="TravelWise Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>TravelWise - адаптивный веб-сайт для туристической компании с интерактивной картой и системой бронирования. Проект создан с фокусом на удобство пользователя и стимулирование конверсий.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Интерактивная карта с достопримечательностями</li>
+            <li>Система онлайн-бронирования туров и отелей</li>
+            <li>Многоязычный интерфейс с поддержкой 5 языков</li>
+            <li>Адаптивный дизайн для всех устройств</li>
+            <li>Интеграция с системами оплаты</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>React, Node.js, MongoDB, Mapbox API, i18n для интернационализации</p>
+
+          <h4>Результат</h4>
+          <p>После запуска сайта конверсия посетителей в клиентов выросла на 40%, а количество онлайн-бронирований увеличилось на 65% по сравнению с предыдущей версией сайта.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Посетить сайт</a>
+        <a href="#contact" class="btn modal-btn">Заказать похожее</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project6">
+      <div class="modal-header">
+        <h3>DeliveryBot - Telegram бот для заказа еды</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/bjV4sKI.jpg" alt="DeliveryBot Screenshot 1">
+          <img src="https://i.imgur.com/0BCPIgC.jpg" alt="DeliveryBot Screenshot 2">
+          <img src="https://i.imgur.com/sYu7cK2.jpg" alt="DeliveryBot Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>DeliveryBot - это Telegram бот для заказа еды из ресторанов с интеграцией с системой оплаты и отслеживанием доставки. Бот разработан для сети ресторанов, желающих автоматизировать процесс заказа и доставки.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Интерактивное меню с категориями и поиском</li>
+            <li>Интеграция с платежными системами</li>
+            <li>Отслеживание статуса заказа в реальном времени</li>
+            <li>Система лояльности и промокодов</li>
+            <li>Автоматическое уведомление курьера о новых заказах</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Python, Telegram Bot API, MongoDB, Yandex.Maps API, платежные шлюзы</p>
+
+          <h4>Результат</h4>
+          <p>За первый месяц работы бота количество онлайн-заказов увеличилось на 200%, а среднее время обработки заказа сократилось с 5 минут до 30 секунд.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://t.me/DeliveryBot" class="btn modal-btn">Попробовать бота</a>
+        <a href="#contact" class="btn modal-btn">Заказать бота</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project7">
+      <div class="modal-header">
+        <h3>SmartGarden - Система автоматического полива</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/9kxPzHT.jpg" alt="SmartGarden Screenshot 1">
+          <img src="https://i.imgur.com/aXCQTxL.jpg" alt="SmartGarden Screenshot 2">
+          <img src="https://i.imgur.com/Fvz9TJM.jpg" alt="SmartGarden Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>SmartGarden - это IoT-система для автоматизации полива и мониторинга растений на базе Arduino с мобильным приложением. Проект разработан для любителей садоводства, желающих автоматизировать уход за растениями.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Автоматический полив на основе данных о влажности почвы</li>
+            <li>Мониторинг температуры, влажности воздуха и освещенности</li>
+            <li>Управление через мобильное приложение</li>
+            <li>Автономная работа с солнечной батареей</li>
+            <li>Уведомления о критических показателях</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Arduino, ESP32, датчики DHT22, датчики влажности почвы, Flutter для мобильного приложения</p>
+
+          <h4>Результат</h4>
+          <p>Система успешно внедрена в нескольких частных домах и небольших теплицах. Пользователи отмечают увеличение урожайности на 25% и снижение расхода воды на 40%.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Схема сборки</a>
+        <a href="#contact" class="btn modal-btn">Заказать систему</a>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project8">
+      <div class="modal-header">
+        <h3>LanguageBuddy - Приложение для изучения языков</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/Yq3Ztlp.jpg" alt="LanguageBuddy Screenshot 1">
+          <img src="https://i.imgur.com/1XZj8Ax.jpg" alt="LanguageBuddy Screenshot 2">
+          <img src="https://i.imgur.com/oFlCs3t.jpg" alt="LanguageBuddy Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>LanguageBuddy - мобильное приложение для изучения иностранных языков с использованием искусственного интеллекта и адаптивного обучения. Приложение подстраивается под уровень и темп обучения пользователя.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>AI-алгоритм для персонализации обучения</li>
+            <li>Распознавание и анализ произношения</li>
+            <li>Интерактивные диалоги с виртуальными собеседниками</li>
+            <li>Геймификация процесса обучения</li>
+            <li>Поддержка 10 языков с возможностью расширения</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Flutter, TensorFlow Lite, Firebase, Cloud Speech-to-Text API, Natural Language Processing</p>
+
+          <h4>Результат</h4>
+          <p>По данным исследования, пользователи LanguageBuddy показывают на 40% более высокую эффективность обучения по сравнению с традиционными методами. Приложение имеет рейтинг 4.7/5.0 в App Store и Google Play.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Скачать приложение</a>
+        <a href="#contact" class="btn modal-btn">Заказать похожее</a>
+      </div>
+    </div>
+
+    <!-- Модальное окно для проекта 9 -->
+    <div class="project-modal" id="project9">
+      <div class="modal-header">
+        <h3>FinTrack - Дизайн-система для финансового приложения</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/DfK3VxL.jpg" alt="FinTrack Screenshot 1">
+          <img src="https://i.imgur.com/RQxTGmU.jpg" alt="FinTrack Screenshot 2">
+          <img src="https://i.imgur.com/jE5FzLC.jpg" alt="FinTrack Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>FinTrack — это комплексная дизайн-система для финансового приложения, созданная с фокусом на доступность и понятность сложной финансовой информации. Проект включает полный набор компонентов UI/UX и пользовательских потоков.</p>
+
+          <h4>Ключевые аспекты</h4>
+          <ul>
+            <li>Разработка единой системы интерфейсных компонентов</li>
+            <li>Адаптивный дизайн для разных размеров экрана</li>
+            <li>Иконография и типографика для финансовых данных</li>
+            <li>Тестирование с пользователями разных возрастных групп</li>
+            <li>Документация и гайдлайны для разработчиков</li>
+          </ul>
+
+          <h4>Инструменты</h4>
+          <p>Figma, Adobe XD, Principle для анимаций, UserTesting для UX-исследований</p>
+
+          <h4>Результат</h4>
+          <p>Дизайн-система была внедрена в финансовое приложение с 300,000+ пользователей. Метрики показали увеличение вовлеченности на 28% и сокращение числа обращений в поддержку по вопросам интерфейса на 35%.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Просмотр кейса</a>
+        <a href="#contact" class="btn modal-btn">Заказать дизайн</a>
+      </div>
+    </div>
+
+    <!-- Модальное окно для проекта 10 -->
+    <div class="project-modal" id="project10">
+      <div class="modal-header">
+        <h3>EventPlanner - Telegram бот для организации мероприятий</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/h9r2Lkj.jpg" alt="EventPlanner Screenshot 1">
+          <img src="https://i.imgur.com/0pXzmW3.jpg" alt="EventPlanner Screenshot 2">
+          <img src="https://i.imgur.com/f7n1nh2.jpg" alt="EventPlanner Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>EventPlanner — это Telegram бот для планирования и организации мероприятий с возможностью создания опросов, управления списками гостей и автоматическими напоминаниями. Бот создан для компаний, часто проводящих корпоративные мероприятия.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Создание опросов для выбора даты и места мероприятия</li>
+            <li>Автоматические напоминания участникам</li>
+            <li>Сбор подтверждений участия и отслеживание списка гостей</li>
+            <li>Интеграция с календарями Google и Outlook</li>
+            <li>Аналитика и отчеты по посещаемости</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Node.js, Telegram Bot API, PostgreSQL, Cron Jobs, OAuth для интеграции с календарями</p>
+
+          <h4>Результат</h4>
+          <p>Бот используется более чем 30 компаниями для организации корпоративных мероприятий. Среднее время на организацию мероприятия сократилось на 65%, а посещаемость увеличилась на 20% благодаря системе напоминаний.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://t.me/EventPlannerDemoBot" class="btn modal-btn">Попробовать бота</a>
+        <a href="#contact" class="btn modal-btn">Заказать бота</a>
+      </div>
+    </div>
+
+    <!-- Модальное окно для проекта 11 -->
+    <div class="project-modal" id="project11">
+      <div class="modal-header">
+        <h3>HomeAutomation - Система умного дома на Arduino</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/S5RFmQl.jpg" alt="HomeAutomation Screenshot 1">
+          <img src="https://i.imgur.com/OtjTHLq.jpg" alt="HomeAutomation Screenshot 2">
+          <img src="https://i.imgur.com/JBw7c3f.jpg" alt="HomeAutomation Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>HomeAutomation — это комплексная система умного дома на базе Arduino и ESP32 с голосовым управлением и интеграцией с Google Assistant. Система обеспечивает автоматизацию бытовых процессов и повышает комфорт проживания.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Управление освещением, климатом и бытовой техникой</li>
+            <li>Голосовой контроль через интеграцию с Google Assistant</li>
+            <li>Система безопасности с датчиками движения и камерами</li>
+            <li>Мониторинг энергопотребления и оптимизация расходов</li>
+            <li>Мобильное приложение для удаленного управления</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>Arduino, ESP32, MQTT, Node-RED для автоматизации, Flutter для мобильного приложения</p>
+
+          <h4>Результат</h4>
+          <p>Система внедрена в 15 домохозяйствах, обеспечивая экономию электроэнергии до 25% и повышение безопасности. Пользователи отмечают значительное улучшение качества жизни и удобство голосового управления бытовыми процессами.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Документация проекта</a>
+        <a href="#contact" class="btn modal-btn">Заказать систему</a>
+      </div>
+    </div>
+
+    <!-- Модальное окно для проекта 12 -->
+    <div class="project-modal" id="project12">
+      <div class="modal-header">
+        <h3>BusinessCRM - CRM система для бизнеса</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="https://i.imgur.com/tFgBGXL.jpg" alt="BusinessCRM Screenshot 1">
+          <img src="https://i.imgur.com/dOj5u7M.jpg" alt="BusinessCRM Screenshot 2">
+          <img src="https://i.imgur.com/PNc9XJD.jpg" alt="BusinessCRM Screenshot 3">
+        </div>
+        <div class="modal-content">
+          <h4>О проекте</h4>
+          <p>BusinessCRM — это веб-система управления взаимоотношениями с клиентами с аналитикой, автоматизацией рабочих процессов и интеграцией с мессенджерами. Система создана для малого и среднего бизнеса, стремящегося оптимизировать работу с клиентами.</p>
+
+          <h4>Ключевые функции</h4>
+          <ul>
+            <li>Управление контактами и сделками с интуитивным интерфейсом</li>
+            <li>Автоматизация маркетинга и продаж</li>
+            <li>Расширенная аналитика и отчетность</li>
+            <li>Интеграция с email, Telegram и WhatsApp</li>
+            <li>API для подключения сторонних сервисов</li>
+          </ul>
+
+          <h4>Технологии</h4>
+          <p>React, Node.js, SQL (PostgreSQL), Redis для кеширования, Docker для развертывания</p>
+
+          <h4>Результат</h4>
+          <p>Система внедрена в более чем 50 компаниях различных отраслей. Клиенты отмечают увеличение конверсии продаж на 30% и сокращение времени на административные задачи на 45% благодаря автоматизации процессов.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn modal-btn">Демо-версия</a>
+        <a href="#contact" class="btn modal-btn">Заказать CRM</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-gradient-overlay"></div>
+    <div class="container">
+      <div class="footer-middle">
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h3 class="footer-title">Услуги</h3>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Мобильная разработка</a></li>
+              <li><a href="index.html#services">Веб-разработка</a></li>
+              <li><a href="index.html#services">UI/UX Дизайн</a></li>
+              <li><a href="index.html#services">Интеграция API</a></li>
+              <li><a href="index.html#services">Тестирование</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Компания</h3>
+            <ul class="footer-links">
+              <li><a href="index.html#about">О нас</a></li>
+              <li><a href="index.html#process">Процесс работы</a></li>
+              <li><a href="index.html#portfolio">Портфолио</a></li>
+              <li><a href="index.html#testimonials">Отзывы</a></li>
+              <li><a href="index.html#contact">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Контакты</h3>
+            <div class="footer-contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Москва, ул. Инновационная, 42</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+79001234567">+7 900 123-45-67</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-telegram"></i>
+                <a href="https://t.me/sadreev_j" target="_blank">@sadreev_j</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:arkgrosscorp@gmail.com">arkgrosscorp@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Следите за нами</h3>
+            <div class="social-links">
+              <a href="https://t.me/sadreev_j" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="app-badges">
+              <a href="#" class="app-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" width="120">
+              </a>
+              <a href="#" class="app-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" width="120">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2020-2025 development. Все права защищены.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Политика конфиденциальности</a>
+          <a href="terms.html">Условия использования</a>
+          <a href="cookies.html">Cookie-файлы</a>
+        </div>
+        <div class="footer-developer">
+          <p>Разработка: <a href="https://t.me/sadreev_j" target="_blank">@sadreev_j</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка возврата наверх -->
+  <button id="back-to-top" class="back-to-top" aria-label="Вернуться к началу страницы">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</body>
+
+</html>
