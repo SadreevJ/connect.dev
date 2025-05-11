@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Информация о Cookie-файлах - Flutter разработка">
+  <meta name="keywords" content="Flutter, cookie, файлы cookie">
+  <meta name="author" content="Flutter Developer">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Cookie-файлы">
+  <meta property="og:description" content="Информация о Cookie-файлах на сайте разработки мобильных и веб-приложений на Flutter">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:url" content="https://fluttercraft.ru/cookies">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Cookie-файлы</title>
+  <style>
+    .cookies-section {
+      padding: 100px 0;
+    }
+
+    .cookies-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cookies-title {
+      margin-bottom: 40px;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    .cookies-content h3 {
+      color: var(--accent-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .cookies-content p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      color: var(--text-color);
+    }
+
+    .cookies-content ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .cookies-content li {
+      margin-bottom: 10px;
+      color: var(--text-color);
+    }
+
+    .back-to-home {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 25px;
+      background-color: var(--accent-color);
+      color: #fff;
+      border-radius: var(--border-radius-small);
+      text-decoration: none;
+      transition: var(--transition-medium);
+    }
+
+    .back-to-home:hover {
+      background-color: var(--accent-hover-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cookie-table {
+      width: 100%;
+      margin-bottom: 30px;
+      border-collapse: collapse;
+    }
+
+    .cookie-table th, .cookie-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .cookie-table th {
+      background-color: var(--accent-color);
+      color: white;
+      font-weight: 600;
+    }
+
+    .cookie-table tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========================================-->
+  <!-- ============ HEADER & NAV ==============-->
+
+  <header class="container">
+    <h1 class="hidden">FlutterCraft | Cookie-файлы</h1>
+    <div class="header-container">
+      <div class="header-logo">
+        <a class="header-logo-pic" href="index.html">
+          <img class="path" src="img/logo.png" alt="FlutterCraft">
+        </a>
+      </div>
+      <div class="header-contacts">
+        <a class="header-tg" href="https://t.me/sadreev_j" target="_blank">
+          <i class="fab fa-telegram"></i> @sadreev_j
+        </a>
+      </div>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#services">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#portfolio">Портфолио</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#testimonials">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cookies-section">
+      <div class="cookies-container container">
+        <h2 class="cookies-title">Cookie-файлы</h2>
+        <div class="cookies-content">
+          <p>Последнее обновление: 1 мая 2023 г.</p>
+
+          <p>Наш сайт использует файлы cookie для улучшения вашего опыта использования. Данная страница объясняет, как мы используем cookie-файлы и как вы можете управлять ими.</p>
+
+          <h3>Что такое Cookie-файлы?</h3>
+          <p>Cookie — это небольшие текстовые файлы, которые сайты размещают на вашем устройстве при посещении. Они используются для запоминания ваших предпочтений, повышения функциональности сайта и анализа того, как вы взаимодействуете с сайтом.</p>
+
+          <h3>Какие Cookie-файлы мы используем?</h3>
+          <p>Мы используем следующие типы cookie-файлов:</p>
+
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Тип</th>
+                <th>Назначение</th>
+                <th>Срок хранения</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Необходимые</td>
+                <td>Эти файлы cookie необходимы для функционирования сайта и не могут быть отключены в наших системах. Обычно они устанавливаются только в ответ на ваши действия, например, установку ваших настроек конфиденциальности или заполнение форм.</td>
+                <td>Сессия</td>
+              </tr>
+              <tr>
+                <td>Функциональные</td>
+                <td>Эти файлы cookie позволяют сайту обеспечивать расширенную функциональность и персонализацию. Они могут устанавливаться нами или сторонними поставщиками услуг, которые мы добавили на наши страницы.</td>
+                <td>1 год</td>
+              </tr>
+              <tr>
+                <td>Аналитические</td>
+                <td>Эти файлы cookie помогают нам понять, как посетители взаимодействуют с сайтом, собирая и сообщая информацию анонимно. Они помогают нам улучшать наш сайт.</td>
+                <td>2 года</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Как управлять Cookie-файлами?</h3>
+          <p>Большинство веб-браузеров позволяют контролировать использование cookie-файлов через настройки. Вы можете отключить, блокировать или удалить cookie-файлы, изменив настройки вашего браузера.</p>
+
+          <p>Управление cookie-файлами в популярных браузерах:</p>
+          <ul>
+            <li><strong>Google Chrome</strong>: Меню → Настройки → Показать дополнительные настройки → Конфиденциальность → Настройки контента → Cookies</li>
+            <li><strong>Mozilla Firefox</strong>: Меню → Настройки → Приватность и защита → История → Пользовательские настройки → Cookies</li>
+            <li><strong>Safari</strong>: Настройки → Конфиденциальность → Cookies и данные сайтов</li>
+            <li><strong>Microsoft Edge</strong>: Меню → Настройки → Конфиденциальность, поиск и службы → Очистить данные просмотра → Cookies и другие данные сайтов</li>
+          </ul>
+
+          <p>Обратите внимание, что ограничение использования cookie-файлов может повлиять на функциональность и удобство использования нашего сайта.</p>
+
+          <h3>Сторонние Cookie-файлы</h3>
+          <p>Наш сайт может использовать сторонние сервисы, которые также устанавливают cookie-файлы. К ним относятся:</p>
+          <ul>
+            <li>Google Analytics (для анализа посещаемости и поведения пользователей)</li>
+            <li>Социальные сети (для функций "поделиться" и отображения контента)</li>
+          </ul>
+
+          <h3>Изменения в политике использования Cookie-файлов</h3>
+          <p>Мы оставляем за собой право вносить изменения в данную политику использования cookie-файлов в любое время. Любые изменения будут опубликованы на этой странице.</p>
+
+          <h3>Контактная информация</h3>
+          <p>Если у вас возникли вопросы относительно нашей политики использования cookie-файлов, пожалуйста, свяжитесь с нами:</p>
+          <p>Email: arkgrosscorp@gmail.com<br>
+          Телеграм: @sadreev_j</p>
+
+          <a href="index.html" class="back-to-home">Вернуться на главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-gradient-overlay"></div>
+    <div class="container">
+      <div class="footer-middle">
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h3 class="footer-title">Услуги</h3>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Мобильная разработка</a></li>
+              <li><a href="index.html#services">Веб-разработка</a></li>
+              <li><a href="index.html#services">UI/UX Дизайн</a></li>
+              <li><a href="index.html#services">Интеграция API</a></li>
+              <li><a href="index.html#services">Тестирование</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Компания</h3>
+            <ul class="footer-links">
+              <li><a href="index.html#about">О нас</a></li>
+              <li><a href="index.html#process">Процесс работы</a></li>
+              <li><a href="index.html#portfolio">Портфолио</a></li>
+              <li><a href="index.html#testimonials">Отзывы</a></li>
+              <li><a href="index.html#contact">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Контакты</h3>
+            <div class="footer-contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Москва, ул. Инновационная, 42</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+79001234567">+7 900 123-45-67</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-telegram"></i>
+                <a href="https://t.me/sadreev_j" target="_blank">@sadreev_j</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:arkgrosscorp@gmail.com">arkgrosscorp@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Следите за нами</h3>
+            <div class="social-links">
+              <a href="https://t.me/sadreev_j" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2020-2025 development. Все права защищены.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Политика конфиденциальности</a>
+          <a href="terms.html">Условия использования</a>
+          <a href="cookies.html">Cookie-файлы</a>
+        </div>
+        <div class="footer-developer">
+          <p>Разработка: <a href="https://t.me/sadreev_j" target="_blank">@sadreev_j</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Плавная прокрутка для якорных ссылок
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          if(this.getAttribute('href') !== '#') {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Фиксированный хедер только при возврате на верх страницы
+      const header = document.querySelector('header');
+      const headerHeight = header.offsetHeight;
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Если прокрутили вверх до начала страницы, удаляем fixed-header
+        if (scrollTop <= 0) {
+          header.classList.remove('fixed-header');
+          header.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // Плавный переход между страницами
+    document.addEventListener('DOMContentLoaded', function() {
+      // Подготовка страницы к переходу
+      document.querySelectorAll('.footer-legal a, .back-to-home').forEach(link => {
+        link.addEventListener('click', function(e) {
+          if (!this.getAttribute('target')) {
+            e.preventDefault();
+            const targetUrl = this.getAttribute('href');
+
+            // Плавное исчезновение текущей страницы
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.3s ease';
+
+            // Переход на новую страницу после анимации
+            setTimeout(() => {
+              window.location.href = targetUrl;
+            }, 300);
+          }
+        });
+      });
+
+      // Плавное появление страницы при загрузке
+      document.body.style.opacity = '0';
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+        document.body.style.transition = 'opacity 0.5s ease';
+      }, 10);
+    });
+  </script>
+</body>
+</html>

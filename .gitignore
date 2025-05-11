@@ -1,0 +1,23 @@
+# Ignore archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+
+# Ignore PowerShell scripts
+*.ps1
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore IDE folders
+.idea/
+.vscode/
+.vs/
+
+# Ignore logs
+*.log
