@@ -11,6 +11,7 @@ if not exist ".git" (
     echo [1/5] Git repository initialization...
     git init
     git remote add origin https://github.com/SadreevJ/connect.dev.git
+    git checkout -b main
 ) else (
     echo [1/5] Git repository already initialized.
 )
@@ -25,7 +26,7 @@ git commit -m "Website update %DATE% %TIME%"
 
 :: Push to GitHub
 echo [4/5] Pushing to GitHub...
-git push -f origin master:main
+git push -f origin main
 
 echo [5/5] Done!
 echo ================================================

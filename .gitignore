@@ -5,6 +5,8 @@
 *.tar
 *.gz
 *.bz2
+*.bat
+
 
 # Ignore PowerShell scripts
 *.ps1
