@@ -1,0 +1,481 @@
+/* Мобильные стили
+   Оптимизация для мобильных устройств
+    Только изменения для меню, отступов и футера
+*/
+
+/* Мобильное меню - скрыто по умолчанию */
+.mobile-menu-toggle {
+  display: none;
+  background: rgba(140, 82, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(140, 82, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+  background: rgba(140, 82, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3);
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 6px auto;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: var(--transition-medium);
+  position: relative;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+  background-color: var(--accent-color);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+  background-color: var(--accent-color);
+}
+
+.mobile-menu-toggle.active {
+  background: rgba(140, 82, 255, 0.2);
+}
+
+/* Всё меню появляется только на мобильных устройствах */
+@media (max-width: 768px) {
+  /* Глобальные отступы и контейнеры */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+
+  .section-header {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .section-header:after {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  /* Мобильное меню - активируется */
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1001;
+  }
+
+  /* Скрываем обычную навигацию */
+  .nav-container {
+    display: none;
+  }
+
+  /* Контейнер для мобильного меню */
+  .nav-container-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(18, 18, 18, 0.97);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+    padding: 0;
+    display: block;
+  }
+
+  .nav-container-mobile.nav-active {
+    height: 100vh;
+    padding-top: 90px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition-delay: 0.1s;
+  }
+
+  .nav-active .nav-list {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 8px 0;
+    width: 100%;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-active .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Добавляем задержку для красивого появления каждого пункта меню */
+  .nav-active .nav-item:nth-child(1) { transition-delay: 0.1s; }
+  .nav-active .nav-item:nth-child(2) { transition-delay: 0.15s; }
+  .nav-active .nav-item:nth-child(3) { transition-delay: 0.2s; }
+  .nav-active .nav-item:nth-child(4) { transition-delay: 0.25s; }
+  .nav-active .nav-item:nth-child(5) { transition-delay: 0.3s; }
+
+  .nav-link {
+    font-size: 24px;
+    padding: 12px 0;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover:after,
+  .nav-link:focus:after {
+    width: 40px;
+  }
+
+  .nav-link:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+  /* Исправление проблемы с preloader сеткой */
+  .preloader {
+    background: var(--gradient-dark) !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .preloader::before,
+  .preloader::after,
+  .preloader > *::before,
+  .preloader > *::after {
+    display: none !important;
+  }
+
+  .preloader-content {
+    background: transparent !important;
+  }
+
+  body.loading {
+    overflow: hidden !important;
+  }
+
+  body.loading::before,
+  body.loading::after {
+    display: none !important;
+  }
+
+  /* Отступы для секций */
+  section {
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+  }
+
+  /* Оптимизация карточек и контента */
+  .service-card,
+  .project-card,
+  .testimonial-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .service-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .service-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Оптимизация футера */
+  .footer {
+    padding: 40px 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Скрываем радиальный градиент в футере на мобильных устройствах */
+  .footer::before {
+    display: none;
+  }
+
+  /* Новый градиент для футера, без жестких обрезанных краев */
+  .footer-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center 30%, rgba(140, 82, 255, 0.08), transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .footer-info {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-description {
+    font-size: 14px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .social-links a {
+    margin: 0 8px;
+  }
+
+  .footer-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .stat-counter {
+    margin: 10px 15px;
+    text-align: center;
+  }
+
+  .footer-newsletter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links a:before {
+    display: none;
+  }
+
+  .footer-links a {
+    padding: 8px 0;
+    display: inline-block;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .copyright,
+  .footer-legal a {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footer-legal {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-input,
+  .btn-subscribe {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .app-badges {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .back-to-top {
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Дополнительные стили для еще меньших экранов */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .section-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .section-header:after {
+    width: 60%;
+    max-width: 200px;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  .about-experience {
+    width: 90px;
+    height: 90px;
+  }
+
+  .experience-number {
+    font-size: 28px;
+  }
+
+  .experience-text {
+    font-size: 12px;
+  }
+
+  .about-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author-avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .author-info {
+    text-align: center;
+  }
+
+  /* Улучшения для изображений */
+  .about-image-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .project-image-container {
+    height: 200px;
+  }
+
+  /* Улучшения для кнопок */
+  .view-project-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Сокращение видимых проектов до 3 на мобильных */
+  .portfolio-items {
+    grid-template-columns: 1fr;
+  }
+}
